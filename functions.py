@@ -62,4 +62,19 @@ def cube(x):
 print(f"The cube of 3 is : {cube(3)}")
 print(f"The cube of 4 is : {cube(4)}")
 
-           
+# decTObin function
+
+def decTObin(n):
+    if n == 0:
+        return "0"
+    
+    result = ""
+    while n > 0:
+        bit = n % 2
+        result = str(bit) + result
+        n = n // 2
+    
+    return result
+            
+print(f"The binary representation of 2 is : {decTObin(2)}")   
+print(f"The binary representation of 10 is : {decTObin(10)}")                  
