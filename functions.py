@@ -31,3 +31,35 @@ def factorial(n):
 
 print(f"The factorial of 5 is : {factorial(5)}")
 print(f"The factorial of 7 is : {factorial(7)}")
+
+# PGCD function
+
+
+def pgcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+print(f"The PGCD of 12 and 18 is : {pgcd(12, 18)}")
+print(f"The PGCD of 48 and 60 is : {pgcd(48, 60)}")
+        
+# absolute value function
+
+def abs(x):
+    if x > 0:
+        return x
+    else:
+        return -x
+    
+print(f"The absolute value of -5 is : {abs(-5)}")
+print(f"The absolute value of 10 is : {abs(10)}")
+
+# cube function
+
+def cube(x):
+    return x*x*x
+
+print(f"The cube of 3 is : {cube(3)}")
+print(f"The cube of 4 is : {cube(4)}")
+
+           
