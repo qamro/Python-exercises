@@ -70,8 +70,8 @@ def decTObin(n):
     
     result = ""
     while n > 0:
-        bit = n % 2
-        result = str(bit) + result
+        bin = n % 2
+        result = str(bin) + result
         n = n // 2
     
     return result
