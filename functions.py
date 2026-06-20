@@ -77,4 +77,34 @@ def decTObin(n):
     return result
             
 print(f"The binary representation of 2 is : {decTObin(2)}")   
-print(f"The binary representation of 10 is : {decTObin(10)}")                  
+print(f"The binary representation of 10 is : {decTObin(10)}")    
+
+# prime function
+
+def is_prime(n):
+    if n < 2:
+        return False
+
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+
+    return True
+        
+print(f"Is 7 a prime number? : {is_prime(7)}")
+print(f"Is 10 a prime number? : {is_prime(10)}")        
+
+                 
+# sum of digits function
+
+def sum_of_digits(n):
+    sum = 0
+    while n > 0:
+        r = n % 10
+        sum = sum + r
+        n = n // 10
+
+    return sum
+
+print(f"The sum of digits of 123 is : {sum_of_digits(123)}")
+print(f"The sum of digits of 456 is : {sum_of_digits(456)}")
