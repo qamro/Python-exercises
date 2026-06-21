@@ -108,3 +108,65 @@ def sum_of_digits(n):
 
 print(f"The sum of digits of 123 is : {sum_of_digits(123)}")
 print(f"The sum of digits of 456 is : {sum_of_digits(456)}")
+
+#binTOdec function
+
+def binTOdec(n):
+    
+    if n not in (0, 1):
+        return "Invalid binary number"
+
+    decimal = 0
+    p = 0
+    while n > 0:
+        r = n % 10
+        decimal = decimal + r * power(2, p)
+        n = n // 10
+        p = p + 1
+
+    return decimal
+
+print(f"The decimal representation of 1010 is : {binTOdec(1010)}")
+print(f"The decimal representation of 1111 is : {binTOdec(1111)}")
+print(f"The decimal representation of 10010011 is : {binTOdec(10010011)}")
+print(f"The decimal representation of 12324 is : {binTOdec(12324)}")
+
+
+# perfect number function
+
+def is_perfect(n):
+    sum = 0
+    for i in range(1, n):
+        if n % i == 0:
+            sum = sum + i
+
+    if sum == n:
+        return True
+    else:
+        return False
+    
+    
+print(f"Is 6 a perfect number? : {is_perfect(6)}")
+print(f"Is 28 a perfect number? : {is_perfect(28)}")    
+
+# armstrong number function
+
+def is_armstrong(n):
+    num_digits = len(str(n))
+    sum = 0
+    temp = n
+
+
+    while temp > 0:
+        r = temp % 10
+        sum = sum + power(r, num_digits)
+        temp = temp // 10
+
+    if sum == n:
+        return True
+    else:
+        return False  
+    
+    
+print(f"Is 153 an armstrong number? : {is_armstrong(153)}")
+print(f"Is 9474 an armstrong number? : {is_armstrong(9474)}")
