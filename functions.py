@@ -112,14 +112,13 @@ print(f"The sum of digits of 456 is : {sum_of_digits(456)}")
 #binTOdec function
 
 def binTOdec(n):
-    
-    if n not in (0, 1):
-        return "Invalid binary number"
-
     decimal = 0
     p = 0
     while n > 0:
         r = n % 10
+        if r not in (0, 1):
+            return "Invalid binary number"
+
         decimal = decimal + r * power(2, p)
         n = n // 10
         p = p + 1
