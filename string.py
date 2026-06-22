@@ -48,6 +48,18 @@ new_character = input("Enter the new character: ")
 replaced_name = name.replace(old_character, new_character)
 print(f"Replaced name: {replaced_name}")
 
+# check if the string contains only alphabets
+if name.isalpha():
+    print("Name contains only alphabets.")
+else:
+    print("Name contains characters other than alphabets.") 
+    
+# check if the string contains only digits
+if name.isdigit():
+    print("Name contains only digits.")
+else:
+    print("Name contains characters other than digits.")               
+
 
 
 # and finally here are all string methods that can be used to manipulate strings in python
