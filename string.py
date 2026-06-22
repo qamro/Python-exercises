@@ -2,7 +2,7 @@ name = input("Enter your full name: ")
 
 print(f"Hello, {name}!")
 
-# string manipulation
+# string manipulation(methods) 
 
 
 # count the number of words in the string (The split() method splits the string into a list of words based on whitespace by default.)
