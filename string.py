@@ -21,9 +21,9 @@ print(f"Lowercase name: {lowercase_name}")
 # count the number of characters in the string or the length of the string  
 name_length = len(name)   
 print(f"Length of name: {name_length}") 
-# count the number of words in the string       
-word_count = len(name.split())
-print(f"Number of words in name: {word_count}")
+# count the number of times a character appears in the string       
+word_count = name.count('k')
+print(f"Number of times 'k' appears in name: {word_count}")
 # reverse the string (this syntax [::-1] is called slicing and it is used to reverse string or list or set or tuple and the -1 it is the step of the reversing and we can skip some characters by changing the step to -2 or -3 or -4 etc)   
 reversed_name = name[::-1]
 print(f"Reversed name: {reversed_name}")    
@@ -48,8 +48,9 @@ new_character = input("Enter the new character: ")
 replaced_name = name.replace(old_character, new_character)
 print(f"Replaced name: {replaced_name}")
 
-# and finally here are all string methods that can be used to manipulate strings in python
 
-print(f"help(str) to see all the string methods in python")    
+
+# and finally here are all string methods that can be used to manipulate strings in python
+print(help(str))    
     
         
