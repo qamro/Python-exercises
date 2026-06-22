@@ -1,5 +1,15 @@
 #format specifiers 
- 
+# .2f is used to format a float number to 2 decimal places
+# + is used to format a number to show the sign of the number
+# 20 is used to format a number to 20 characters wide and left aligned 
+# , is used to format a number to show the thousands separator
+# 0 is used to format a number to show leading zeros for example 09 it gives 000123.45 which is 9 characters wide 
+# < is used to format a number to be left aligned
+# > is used to format a number to be right aligned
+# ^ is used to format a number to be centered
+# we can use all these format string at the same time for example {value:>20,.2f} 
+
+
 name = "qamro"
 age = 18
 height = 1.753  
