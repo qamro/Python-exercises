@@ -10,13 +10,20 @@ menu = {"pizza": 3.00,
 "lemonade": 1.75}
 cart = []
 total = 0
-print("--------------MENU--------------")
+print("---------MENU---------")
 for key, value in menu.items():
     print(f"{key:10}: ${value:.2f}")
-print("--------------------------------")    
+print("----------------------")    
 while True:
     food = input("Select an item to buy: ")
     if food.lower() == "q":
         break
-    elif menu.get(food) is not 
-    
+    elif menu.get(food) is not None:
+        cart.append(food)
+print()
+print("------YOUR ORDER------")  
+for food in cart:
+    total = total + menu.get(food)
+    print(food, end=" ")   
+print()         
+print(f"Total is: ${total:.2f}")    
