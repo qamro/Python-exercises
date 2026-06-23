@@ -27,4 +27,5 @@ while player not in options:
     else:
         computer = random.choice(options)
         player = None
+print("Thanks for playing!")        
             
