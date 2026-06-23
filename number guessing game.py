@@ -18,8 +18,10 @@ while True:
         elif guess > answer:
             print("Too high! Try again!")  
         else:
-            print(f"🎉🎉🎉CORRECT! The answer was {answer}")  
+            print("🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉")
+            print(f"CORRECT! The answer was {answer}")  
             print(f"Number of guesses is {guesses}")  
+            print("🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉")
             play_again = input("Play again?(Enter YES or NO): ")
             if play_again.upper() == "NO":
                 break
