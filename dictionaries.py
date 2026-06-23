@@ -11,7 +11,7 @@ print(f"the length of the dictionary is: {len(countries)}")
 #to get a value of any key
 algeria_key = countries.get("ALGERIA")
 print(algeria_key)
-#check if a value exists or not
+#check if a value exists or not (if a value doesn't exist it will return None)
 if countries.get("CHINA"):
     print("The capital of china exists")
 else:
