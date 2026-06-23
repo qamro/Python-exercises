@@ -1,5 +1,10 @@
-# string indexing is the process of accessing individual characters in a string using their index. In Python, string indexing starts at 0, which means that the first character of a string is at index 0, the second character is at index 1, and so on. You can use square brackets [] to access characters in a string by their index.
-# [start:stop:step] is the syntax of slicing and it is used to access a range of characters in a string and the start is the index of the first character to be accessed, the stop is the index of the last character to be accessed (not included) and the step is the number of characters to skip between each character accessed (default is 1).
+#string indexing is the process of accessing individual characters in a string using their index. 
+#In Python, string indexing starts at 0, which means that the first character of a string is at index 0, the second character is at index 1, and so on. 
+#You can use square brackets [] to access characters in a string by their index.
+#[start:stop:step] is the syntax of slicing and it is used to access a range of characters in a string 
+#the start is the index of the first character to be accessed
+#the stop is the index of the last character to be accessed (not included) 
+#the step is the number of characters to skip between each character accessed (default is 1).
 name = input("Enter your name: ")   
 print(f"First character: {name[0]}")
 print(f"Last character: {name[-1]}")
