@@ -71,7 +71,8 @@ print(fruits_set6)
 #issubset() method returns True if all the elements of the set are present in another set(the set is a subset of another set)
 is_subset = fruits_set.issubset(fruits_set2)
 print(f"Is fruits_set a subset of fruits_set2? {is_subset}")
-#issuperset() method returns True if all the elements of another set are present in the set(the set is a superset of another set or the other set is a subset of the set)
+#issuperset() method returns True if all the elements of another set are present in the set
+#(the set is a superset of another set or the other set is a subset of the set)
 is_superset = fruits_set.issuperset(fruits_set2)
 print(f"Is fruits_set a superset of fruits_set2? {is_superset}")    
 #clear() method removes all the elements from the set
