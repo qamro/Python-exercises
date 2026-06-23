@@ -52,6 +52,8 @@ print(fruits_set)
 #len() method returns the number of elements in the set
 length = len(fruits_set)
 print(f"Length of fruits set: {length}")
+#check if an element is present in the set
+print("banana" in fruits_set)
 #add() method adds an element to the set    
 fruits_set.add("orange")
 print(fruits_set)
