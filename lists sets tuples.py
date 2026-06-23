@@ -59,7 +59,7 @@ print(fruits_set)
 #discard() method removes an element from the set (if the element is not present, it does not raise an error)
 fruits_set.discard("kiwi")  
 print(fruits_set)   
-#pop() method removes and returns an arbitrary element from the set
+#pop() method removes an element randomly 
 fruits_set.pop()
 print(fruits_set)
 #union() method returns a new set with all the elements from both sets  
