@@ -19,7 +19,7 @@ while True:
     food = input("Select an item to buy: ")
     if food.lower() == "q":
         break
-    elif menu.get(food) is not None:
+    elif menu.get(food) is not None:  #here we handle if the user enter another food that doesn't exist in the menu
         cart.append(food)
 print()
 print("------YOUR ORDER------")  
