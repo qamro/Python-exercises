@@ -9,6 +9,8 @@ print(fruits)
 #len() method returns the number of elements in the list
 length = len(fruits)
 print(f"Length of fruits list: {length}")
+#check if an element is present in the list
+print("banana" in fruits)
 #append() method adds an element to the end of the list
 fruits.append("grape")      
 print(fruits)
