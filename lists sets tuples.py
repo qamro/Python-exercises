@@ -1,7 +1,7 @@
 #lists [] changeable, ordered, allows duplicates
 #sets {} changeable, unordered, no duplicates
 #tuples () unchangeable, ordered, allows duplicates
-
+#Note : to access elements in a list or tuple, we can use indexing and slicing just like we did with strings.
 
 #now we start with lists methods
 fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
