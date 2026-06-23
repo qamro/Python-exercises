@@ -8,7 +8,7 @@ questions = ("What is the best TVshow ever?: ",
 options = (("A. Breaking Bad", "B. Prison Break", "C. Game of Thrones", "D. The Walking Dead"),
 ("A. Diego Armando Maradona", "B. Lionel Messi", "C. Cristiano Ronaldo", "D. PÉLE"),
 ("A. ENSIA", "B. ENP Alger", "C. ESI Alger", "D. ESTIN"),
-("A. Algebra", "B. Algorithmic and Dynamic Data Structure", "C. Computer Architecture", "D. Analysis"),
+("A. Algebra", "B. Algorithmic and Dynamic Data Structures", "C. Computer Architecture", "D. Analysis"),
 ("A. Bobby Ficher", "B. Magnus Carlsen", "C. Garry Kasparov", "D. Mikhail Tal"),
 ("A. Monkey D Luffy", "B. Uzumaki Naruto", "C. Kurosaki Ichigo", "D. Son Goku"),
 ("A. 8", "B. 9", "C. 10", "D. 11"))
