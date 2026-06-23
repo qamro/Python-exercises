@@ -1,3 +1,4 @@
+#this is a small practice about dictionaries
 menu = {"pizza": 3.00,
 "tacos": 2.50,
 "shawarma": 2.00,
