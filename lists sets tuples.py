@@ -100,6 +100,8 @@ print(fruits_tuple)
 #len() method returns the number of elements in the tuple
 length = len(fruits_tuple)
 print(f"Length of fruits tuple: {length}")
+#check if an element is present in the tuple
+print("banana" in fruits_tuple)
 #count() method returns the number of times an element appears in the tuple
 count = fruits_tuple.count("apple")
 print(f"Count of apple: {count}")
