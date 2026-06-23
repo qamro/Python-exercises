@@ -5,6 +5,10 @@
 
 #now we start with lists methods
 fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(fruits)
+#len() method returns the number of elements in the list
+length = len(fruits)
+print(f"Length of fruits list: {length}")
 #append() method adds an element to the end of the list
 fruits.append("grape")      
 print(fruits)
@@ -43,6 +47,9 @@ print(fruits)
 #now we start with sets methods
 fruits_set = {"apple", "banana", "cherry"}
 print(fruits_set)
+#len() method returns the number of elements in the set
+length = len(fruits_set)
+print(f"Length of fruits set: {length}")
 #add() method adds an element to the set    
 fruits_set.add("orange")
 print(fruits_set)
@@ -86,6 +93,9 @@ print(fruits_set)
 #now we start with tuples methods (tuples are immutable, so we cannot change the original tuple)
 fruits_tuple = ("apple", "banana", "cherry")
 print(fruits_tuple)
+#len() method returns the number of elements in the tuple
+length = len(fruits_tuple)
+print(f"Length of fruits tuple: {length}")
 #count() method returns the number of times an element appears in the tuple
 count = fruits_tuple.count("apple")
 print(f"Count of apple: {count}")
