@@ -466,55 +466,6 @@ print("\n" + "="*60)
 print("SECTION 6: COMMON MISTAKES AND HOW TO AVOID THEM")
 print("="*60)
 
-# =============================================================================
-# SECTION 6: COMMON MISTAKES
-# =============================================================================
-
-# ❌ MISTAKE 1: Wrong order of parameters
-# def wrong(* args, normal_param):  # you CAN do this but it requires
-#                                     # normal_param to be keyword-only
-# def wrong(**kwargs, *args):       # ❌ SyntaxError - **kwargs must be LAST
-
-# ✅ CORRECT ORDER:
-# def correct(positional, *args, keyword_only, **kwargs)
-
-# ❌ MISTAKE 2: Thinking args is a list — it's a TUPLE (immutable)
-def demo_tuple(*args):
-    print(f"args is a tuple: {type(args)}")
-    # args[0] = 99    # ❌ TypeError: tuple does not support item assignment
-    args_list = list(args)  # ✅ convert to list if you need to modify
-    args_list[0] = 99
-    print(f"modified list: {args_list}")
-
-print("\n--- Mistake 2: args is a tuple, not a list ---")
-demo_tuple(1, 2, 3)
-
-
-# ❌ MISTAKE 3: Passing a list without unpacking
-def add(a, b, c):
-    return a + b + c
-
-my_list = [1, 2, 3]
-# add(my_list)   # ❌ passes the whole list as ONE argument
-# add(*my_list)  # ✅ unpacks into three separate arguments
-
-print("\n--- Mistake 3: Forgetting to unpack ---")
-print(add(*my_list))  # ✅ 6
-
-
-# ❌ MISTAKE 4: Using the same key twice in **kwargs
-# introduce_person(name="Alice", name="Bob")  # ❌ SyntaxError: keyword repeated
-
-# ✅ GOOD PRACTICE: always use .get() with a default when reading kwargs
-def safe_read(**kwargs):
-    name = kwargs.get("name", "Guest")       # default = "Guest"
-    role = kwargs.get("role", "viewer")      # default = "viewer"
-    print(f"  {name} ({role})")
-
-print("\n--- Good practice: use .get() with defaults ---")
-safe_read(name="Alice", role="admin")
-safe_read(name="Bob")         # role defaults to "viewer"
-safe_read()                   # both default
 
 
 print("\n" + "="*60)
