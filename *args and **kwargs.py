@@ -462,11 +462,6 @@ print(query("products", price=99, in_stock=True))
 # SELECT * FROM products WHERE price = '99' AND in_stock = 'True';
 
 
-print("\n" + "="*60)
-print("SECTION 6: COMMON MISTAKES AND HOW TO AVOID THEM")
-print("="*60)
-
-
 
 print("\n" + "="*60)
 print("SECTION 7: QUICK REFERENCE CHEAT SHEET")
