@@ -455,11 +455,7 @@ print(query("users"))
 print(query("users", "name", "email"))
 # SELECT name, email FROM users;
 
-print(query("users", "name", "email", age=25, city="Paris"))
-# SELECT name, email FROM users WHERE age = '25' AND city = 'Paris';
 
-print(query("products", price=99, in_stock=True))
-# SELECT * FROM products WHERE price = '99' AND in_stock = 'True';
 
 
 
