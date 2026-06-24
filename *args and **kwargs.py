@@ -543,6 +543,3 @@ cheatsheet = """
 """
 print(cheatsheet)
 
-print("="*60)
-print("END OF TUTORIAL — You now know everything about *args and **kwargs!")
-print("="*60)
