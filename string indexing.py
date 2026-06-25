@@ -3,7 +3,10 @@
 #You can use square brackets [] to access characters in a string by their index.
 #[start:stop:step] is the syntax of slicing and it is used to access a range of characters in a string 
 #the start is the index of the first character to be accessed
-#the stop is the index of the last character to be accessed (not included) 
+#the stop is the index of the last character to be accessed 
+# the end index in both the arrays and the strings is exclusive 
+# the last index in our array for example is 4 when we use him as an end index and it is 3 when we use him as a start index
+# this case is only for the end index
 #the step is the number of characters to skip between each character accessed (default is 1).
 name = input("Enter your name: ")   
 print(f"First character: {name[0]}")
