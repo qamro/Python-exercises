@@ -24,7 +24,8 @@ print(f"Length of name: {name_length}")
 # count the number of times a character appears in the string       
 word_count = name.count('k')
 print(f"Number of times 'k' appears in name: {word_count}")
-# reverse the string (this syntax [::-1] is called slicing and it is used to reverse string or list or set or tuple and the -1 it is the step of the reversing and we can skip some characters by changing the step to -2 or -3 or -4 etc)   
+# reverse the string 
+# (this syntax [::-1] is called slicing and it is used to reverse string or list or set or tuple and the -1 it is the step of the reversing and we can skip some characters by changing the step to -2 or -3 or -4 etc)   
 reversed_name = name[::-1]
 print(f"Reversed name: {reversed_name}")    
 # find a character in the string 
@@ -34,7 +35,8 @@ if character in name:
 else:
     print(f"Character '{character}' not found in name.")
     
-# find the index of a character in the string  (generally the index of a character is the position of the character in the string and it starts from 0 and it is used to find the position of a character in a string and when we get -1 it means the character is not found in the string) 
+# find the index of a character in the string  
+# (generally the index of a character is the position of the character in the string and it starts from 0 and it is used to find the position of a character in a string and when we get -1 it means the character is not found in the string) 
 character = input("Enter a character to find its index: ")
 index = name.find(character)
 if index != -1:
