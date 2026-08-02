@@ -3,6 +3,6 @@
 num_pad = ((1,2,3),(4,5,6),(7,8,9,),("*",0,"#"))   # thats 2D tuple
 for row in num_pad:
     for num in row:
-        print(num, end=" ")
+        print(num, end=" ")   #end=" " is used to print the numbers in the same row
     
     print()    #just to add new line for the next row
