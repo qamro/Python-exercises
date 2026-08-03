@@ -21,4 +21,16 @@ print()
 
 name = "Qamro Bakhouche" # this is a string, which is an iterable
 for letter in name:
-    print(letter)
+    print(letter, end=" ")
+print()        
+
+dict = {"name": "Qamro", "age": 18, "city": "Sétif"} # this is a dictionary, which is an iterable
+for key, value in dict.items(): 
+    print(f"{key}: {value}")  # return both key and value
+print()
+for key in dict.keys():
+    print(key)  # return only keys
+print()
+for value in dict.values():
+    print(value)  # return only values  
+print()    
