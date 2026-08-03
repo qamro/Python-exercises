@@ -19,3 +19,6 @@ for fruit in fruits:
     print(fruit)     
 print()    
 
+name = "Qamro Bakhouche" # this is a string, which is an iterable
+for letter in name:
+    print(letter)
