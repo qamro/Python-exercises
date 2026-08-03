@@ -7,3 +7,15 @@ for number in numbers:
 print()
 for number in reversed(numbers): 
     print(number)    
+print()
+
+numbers = (1, 2, 3, 4, 5) # this is a tuple, which is also an iterable
+for number in numbers:
+    print(number)
+print()
+
+fruits = {"apple", "banana", "cherry"} # this is a set, which is an iterable
+for fruit in fruits:
+    print(fruit)     
+print()    
+
