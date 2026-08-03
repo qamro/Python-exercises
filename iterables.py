@@ -4,6 +4,6 @@
 numbers = [1, 2, 3, 4, 5] # this is a list, which is an iterable
 for number in numbers:
     print(number)
-
+print()
 for number in reversed(numbers): 
     print(number)    
