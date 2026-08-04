@@ -7,7 +7,7 @@
 #                     # do something else
 
 
-# an exaple of using match case statement to determine the day of the week
+# an example of using match case statement to determine the day of the week
 def day_of_week(day):
     match day:
         case 1:
