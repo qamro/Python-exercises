@@ -14,7 +14,7 @@ finally:
     
 """
 
-# Examples of exception handling in python
+# Example of exception handling in python
 number = int(input("Enter a number: "))
 try:
     result = 10 / number
