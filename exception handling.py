@@ -13,3 +13,14 @@ finally:
     # code that runs regardless of whether an exception occurs or not
     
 """
+
+# Examples of exception handling in python
+number = int(input("Enter a number: "))
+try:
+    result = 10 / number
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero piece of shit.")
+else:
+    print(f"The result is: {result}")
+finally:
+    print("Execution completed.")    
