@@ -18,7 +18,7 @@ print()
 # get the current time and date
 now = datetime.datetime.now()
 print(f"The current date and time is: {now}")
-# we specify the format of the date and time using strftime()
+# we specify the format of the date and time using string format time function ( strftime() )
 now = now.strftime("%Y-%m-%d %H:%M:%S") # year-month-day hour:minute:second
 print(f"The current date and time is: {now}")
 print()
