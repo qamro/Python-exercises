@@ -24,7 +24,7 @@ def set_alarm(alarm_time):
             while pygame.mixer.music.get_busy():   # Without this loop, the program may terminate before the sound finishes. 
                 time.sleep(1)                      # wait 1 second and check again if the music is still playing.
             
-            is_running = False     # exit the while loop
+            is_running = False     # exit the while loop after the alarm music finishes
             
             
         time.sleep(1) # the current time will be updated after each 1 second
