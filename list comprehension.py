@@ -28,6 +28,6 @@ print(odd_numbers)
 print()
 
 # you can also use list comprehension to create a list of tuples
-doubles_tuples = [(x, x**2) for x in range(1, 6)]
-print(doubles_tuples)
+square_tuples = [(x, x**2) for x in range(1, 6)]
+print(square_tuples)
 print()
