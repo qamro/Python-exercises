@@ -8,7 +8,7 @@ def get_pokemon_info(name):
     
     if response.status_code == 200:
         pokemon_data = response.json()  # that will convert our json response to a python dictionary
-        return pokemon_data   # our function returns a dictionary of pokemon info
+        return pokemon_data   # our function returns a dictionary of pokemon information
     else:
         print(f"Failed to fetch data {response.status_code}") 
         
