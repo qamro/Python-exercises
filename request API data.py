@@ -19,7 +19,7 @@ pokemon_name = "pikachu"
 pokemon_info = get_pokemon_info(pokemon_name)  # pokemon_info is a dictionary of the pokemon information 
 
 if pokemon_info:            # if pokemon_info exists
-    # we use use: dictionary["key"] to get the value
+    # we use: dictionary["key"] to get the value
     print(f"Name: {pokemon_info["name"]}")  
     print(f"ID: {pokemon_info["id"]}")
     print(f"Height: {pokemon_info["height"]}")
