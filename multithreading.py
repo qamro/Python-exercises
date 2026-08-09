@@ -3,9 +3,10 @@ import time
 
 # import time will help to understand the multithreading
 # Multithreading: run multiple threads concurrently in one process (shared memory).
-# Good for I/O-bound tasks (network/disk waits)
+# Good for I/O-bound tasks (network/disk waits) and web requests and waiting APIs
 # the structure to create a thread is: thread = threading.Thread(target=function, args=(...), kwargs={...})
-# to begin running of the thread: thread.start()
+# to begin running of the thread: thread.start() 
+# to wait for it to finish: thread.join()        
 
 
 def make_sum_operation(x, y):
@@ -38,3 +39,18 @@ work3.start()
 
 work4 = threading.Thread(target=hang_out)
 work4.start()  
+
+
+# if we want to wait until the all the works finish and then we will complete our program we can use: thread.join() method
+
+work1.join() # wait for the first work to finish
+
+work2.join() # wait for the second work to finish
+
+work3.join() # wait for the third work to finish
+
+work4.join() # wait for the fourth work to finish
+
+# then we print that all works are completed
+print("All the works are completed") 
+
