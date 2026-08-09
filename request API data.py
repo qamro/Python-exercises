@@ -8,15 +8,22 @@ def get_pokemon_info(name):
     
     if response.status_code == 200:
         pokemon_data = response.json()  # that will convert our json response to a python dictionary
-        print(pokemon_data)
+        return pokemon_data   # our function returns a dictionary of pokemon info
     else:
         print(f"Failed to fetch data {response.status_code}") 
         
 
 
-# example of pokemon name to perform our function
+# example of pokemon name pikachu
 pokemon_name = "pikachu"
-get_pokemon_info(pokemon_name)
+pokemon_info = get_pokemon_info(pokemon_name)  # pokemon_info is a dictionary of the pokemon information 
+
+if pokemon_info:            # if pokemon_info exists
+    # we use use: dictionary["key"] to get the value
+    print(f"Name: {pokemon_info["name"]}")  
+    print(f"ID: {pokemon_info["id"]}")
+    print(f"Height: {pokemon_info["height"]}")
+    print(f"Weight: {pokemon_info["weight"]}")
 
 
 """
@@ -33,4 +40,5 @@ NOTE: these are some familiar error response:
 402: Payment required
 401: Unauthorized
 400: bad request
+
 """
