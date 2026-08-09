@@ -2,9 +2,9 @@ import threading
 import time
 
 # import time will help to understand the multithreading
-# Multithreading: run multiple threads concurrently in one process (shared memory).
+# Multithreading(multitasking): run multiple threads concurrently in one process (shared memory).
 # Good for I/O-bound tasks (network/disk waits) and web requests and waiting APIs
-# the structure to create a thread is: thread = threading.Thread(target=function, args=(...), kwargs={...})
+# the structure to create a thread is: thread = threading.Thread(target=function, args=(,,,), kwargs={,,,})
 # to begin running of the thread: thread.start() 
 # to wait for it to finish: thread.join()        
 
