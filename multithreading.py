@@ -41,7 +41,7 @@ work4 = threading.Thread(target=hang_out)
 work4.start()  
 
 
-# if we want to wait until the all the works finish and then we will complete our program we can use: thread.join() method
+# if we want to wait until all the daily works finish and then we will complete our program we can use: thread.join() method
 
 work1.join() # wait for the first work to finish
 
