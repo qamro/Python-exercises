@@ -41,3 +41,14 @@ When we call say_hello("Qamro"), the following happens:
         After the function is called.
         Something is happening after the function is called.
 """
+
+"""
+we use wrapper functions to wrap the original function and add additional behavior before and after the function call.
+if we dont use it and just write the code like that :
+        def my_first_decorator(func):
+            print("Something is happening before the function is called.")
+            func(*args, **kwargs)
+            print("Something is happening after the function is called.")
+
+it will work whether we call the function or not because the decorator will be executed at the time of decoration, not at the time of function call.
+"""
