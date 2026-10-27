@@ -52,3 +52,7 @@ if we dont use it and just write the code like that :
 
 it will work whether we call the function or not because the decorator will be executed at the time of decoration, not at the time of function call.
 """
+
+"""
+and we used *args and **kwargs as a parameters of wrapper and func functions to accept any arguments from the main function whether its args or kwargs
+"""
